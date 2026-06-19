@@ -1,0 +1,92 @@
+/* index.css - Estilos específicos para la página de inicio */
+
+.welcome {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    background: url('../img/background.jpg') no-repeat center center/cover;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.welcome-container {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 40px;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow-md);
+    position: relative;
+    z-index: 2;
+    max-width: 600px;
+}
+
+.welcome h2 {
+    font-size: 2.5em;
+    color: var(--text-dark);
+    margin-bottom: 10px;
+}
+
+.welcome h2 span {
+    color: var(--primary-color);
+}
+
+.welcome p {
+    font-size: 1.2em;
+    color: var(--text-muted);
+    margin-bottom: 20px;
+}
+
+.menu-section {
+    padding: 40px 20px;
+    background-color: var(--accent-light);
+    text-align: center;
+    margin-bottom: 30px;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow-sm);
+}
+
+.menu-section h3 {
+    font-size: 2.2em;
+    color: var(--primary-color);
+    margin-bottom: 25px;
+}
+
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    justify-content: center;
+}
+
+.menu-item {
+    background-color: var(--bg-card);
+    padding: 20px;
+    border-radius: var(--border-radius);
+    text-align: center;
+    box-shadow: var(--shadow-md);
+    transition: transform var(--transition-normal), box-shadow var(--transition-normal);
+}
+
+.menu-item:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-hover);
+}
+
+.menu-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: var(--border-radius-sm);
+}
+
+.menu-item h4 {
+    margin-top: 15px;
+    font-size: 1.3em;
+    color: var(--text-dark);
+}
+
+.menu-item p {
+    color: var(--text-muted);
+    font-size: 0.95em;
+    margin-top: 5px;
+}
